@@ -46,28 +46,42 @@
                 <h2>«HTML űrlap»</h2>
                 <form action="">
                     <fieldset>
-                        <legend>Megrendelő adatai</legend>
-                        <p><label for="">Név: <input type="text" name="nev" id="nev"></label>
-                            <small>Vezetéknév Keresztnév</small>
+                        <legend>Megrendelo adatai</legend>
+                        <p>
+                            <label for="for">nev: <input type="text" name="nev" id="nev" placeholder="név megadása.." required></label>
+                            <small>Vezetéknév Keresznév</small>
                         </p>
                         <p>
-                            <label for="">Telefon: <input type="tel" name="telefon" id="telefon" size="17"></label>
+                            <label for="">Telefon <input type="number" name="Telefon" id="Telefon" placeholder="telefonszam megadása.." size="17" required></label>
                         </p>
-
+                        <p><label for="">szállitási cím: <input type="text" name="cim" id="cim" placeholder="ide ird a szállitási cimet" required></label></p>
+                        <p>
+                            <label for="email">Email: <input type="email" name="email" id="email" placeholder="email cím megadása.." required></label>
+                        </p>
                     </fieldset>
                     <fieldset>
-                        <legend>A pizza mérete</legend>
-                        <p><label for=""><input type="radio" name="meret" value="kicsi" checked>kicsi</label></p>
-                        <p><label for=""><input type="radio" name="meret" value="nagy">nagy</label></p>
+                        <legend>Pizza mérete</legend>
+                        <p>
+                            <label for=""><input type="radio" name="meret"  value="kicsi" checked>kicsi</label>
+                        </p>
+                        <p>
+                            <label for=""><input type="radio" name="meret"  value="nagy">nagy</label>
+                        </p>
                     </fieldset>
                     <fieldset>
                         <legend>Feltétek</legend>
-                        <p><label for=""><input type="checkbox" name="feltet1" value="sonka">sonka</label></p>
-                        <p><label for=""><input type="checkbox" name="feltet1" value="sajt">sajt</label></p>
-                        <p><label for=""><input type="checkbox" name="feltet1" value="gomba">gomba</label></p>
+                        <p>
+                            <label for=""><input type="checkbox" name="feltet1" value="sonka" checked>sonka</label>
+                        </p>
+                         <p>
+                            <label for=""><input type="checkbox" name="feltet1" value="sajt">sajt</label>
+                        </p>
+                         <p>
+                            <label for=""><input type="checkbox" name="feltet1" value="gomba">gomba</label>
+                        </p>                               
                     </fieldset>
-                </form>
 
+                </form>
             </article>
         </section>
     </div>
